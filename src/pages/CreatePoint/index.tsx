@@ -2,7 +2,6 @@ import React, { useState, useEffect, ChangeEvent, FormEvent } from 'react';
 import { Link , useNavigate} from 'react-router-dom';
 import {FiArrowLeft} from 'react-icons/fi';
 import { MapContainer, TileLayer, Marker, useMapEvents} from 'react-leaflet';
-import L from 'leaflet'
 import axios from 'axios';
 import 'leaflet/dist/leaflet.css';
 
@@ -39,7 +38,7 @@ const CreatePoint: React.FC = () => {
     const [cities, setCities] = useState<string[]>([]);
     
 
-    const [initialPosition, setInitialPosition] = useState<[number, number]>([0, 0]);
+    const [, setInitialPosition] = useState<[number, number]>([0, 0]);
 
     const [formData, setFormData] = useState({
         name:'',
