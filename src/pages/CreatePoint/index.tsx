@@ -181,6 +181,7 @@ const CreatePoint: React.FC = () => {
                             name="name" 
                             id="name" 
                             onChange={handleInputChange}
+                            required
                         />
                     </div>
 
@@ -192,6 +193,7 @@ const CreatePoint: React.FC = () => {
                                 name="email" 
                                 id="email" 
                                 onChange={handleInputChange}
+                                required
                             />
                         </div>
 
@@ -202,6 +204,7 @@ const CreatePoint: React.FC = () => {
                                 name="whatsapp" 
                                 id="whatsapp" 
                                 onChange={handleInputChange}
+                                required
                             />
                         </div>                        
 
@@ -238,6 +241,7 @@ const CreatePoint: React.FC = () => {
                                 id="uf" 
                                 value={selectedUf} 
                                 onChange={handleSelectUf}
+                                required                                
                             >
                                 <option value="0">Selecione uma UF</option>
                                 {ufs.map(uf => (
@@ -253,6 +257,7 @@ const CreatePoint: React.FC = () => {
                                 id="city"
                                 value={selectedCity}
                                 onChange={handleSelectCity}
+                                required
                             >
                                 <option value="0">Selecione uma cidade</option>
                                 {cities.map(city => (
